@@ -78,7 +78,7 @@
     
     CGContextSetStrokeColorWithColor(context, self.lineColor.CGColor);
     CGContextSetLineWidth(context, self.lineWidth);
-    CGFloat strokeOffset = (self.lineWidth / 2);  // Because lines are drawn between pixels. This moves it back onto the pixel.
+    CGFloat strokeOffset = (self.lineWidth / 2) + 5;  // Because lines are drawn between pixels. This moves it back onto the pixel.
 
     if (self.rowHeight > 0.0f) {
         CGRect rowRect = CGRectMake(rect.origin.x, rect.origin.y, rect.size.width, self.rowHeight);
